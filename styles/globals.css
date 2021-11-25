@@ -1,12 +1,12 @@
 /* USE THIS TO OVERWRITE BOOTSTRAP NATIVE STYLES/CLASSES */
 
 :root {
-	--primary: #E05433 !important;
-	--secondary: #6c757d !important;
-	--success: #28a745 !important;
+	--primary: #FFAC12 !important;
+	--secondary: #271A00 !important;
+	--success: #74B439 !important;
 	--info: #17a2b8 !important;
-	--warning: #ffc107 !important;
-	--danger: #dc3545 !important;
+	--warning: #db6a1f!important;
+	--danger: #FF0000!important; 
 }
 
 body {
@@ -58,16 +58,16 @@ body {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
- -webkit-box-shadow:0 0 0 1px #f8f9fa,0 0 0 .2rem rgba(224,84,51,0.25);
+ -webkit-box-shadow:0 0 0 1px #f8f9fa,0 0 0 .2rem rgba(224,84,51,0.75);
  box-shadow:0 0 0 1px #f8f9fa,0 0 0 .2rem rgba(224,84,51,0.25)
 }
 
 .custom-range:focus::-moz-range-thumb {
- box-shadow:0 0 0 1px #f8f9fa,0 0 0 .2rem rgba(224,84,51,0.25)
+ box-shadow:0 0 0 1px #f8f9fa,0 0 0 .2rem rgba(224,84,51,0.75)
 }
 
 .custom-range:focus::-ms-thumb {
- box-shadow:0 0 0 1px #f8f9fa,0 0 0 .2rem rgba(224,84,51,0.25)
+ box-shadow:0 0 0 1px #f8f9fa,0 0 0 .2rem rgba(224,84,51,0.75)
 }
 
 .custom-range::-moz-focus-outer {
@@ -78,7 +78,7 @@ body {
  width:1rem;
  height:1rem;
  margin-top:-.25rem;
- background-color:#E05433;
+ background-color:#FFAC12;
  border:0;
  border-radius:1rem;
  -webkit-transition:background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
@@ -113,7 +113,7 @@ body {
 .custom-range::-moz-range-thumb {
  width:1rem;
  height:1rem;
- background-color:#E05433;
+ background-color:#FFAC12;
  border:0;
  border-radius:1rem;
  -webkit-transition:background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
@@ -132,7 +132,7 @@ body {
 }
 
 .custom-range::-moz-range-thumb:active {
- background-color:#f8d6ce
+ background-color:#FFE3B0
 }
 
 .custom-range::-moz-range-track {
@@ -151,7 +151,7 @@ body {
  margin-top:0;
  margin-right:.2rem;
  margin-left:.2rem;
- background-color:#E05433;
+ background-color:#FFAC12;
  border:0;
  border-radius:1rem;
  -webkit-transition:background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
@@ -169,7 +169,7 @@ body {
 }
 
 .custom-range::-ms-thumb:active {
- background-color:#f8d6ce
+ background-color:#FFE3B0
 }
 
 .custom-range::-ms-track {
@@ -223,11 +223,11 @@ body {
 }
 
 .dropdown-item:hover {
-	background-color: rgb(192, 56, 27) !important;
+	background-color: #FFAC12 !important;
 }
 
 a.text-primary:hover {
-	color: rgb(192, 56, 27) !important;
+	color: #FFAC12 !important;
 	text-decoration: none;
 }
 .mapboxgl-popup-content {

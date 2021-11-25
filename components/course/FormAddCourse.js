@@ -109,7 +109,7 @@ const AddCourseForm = props => {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label>Duration</label>
+                                    <label>Lease Duration</label>
                                     <input
                                         type="number"
                                         name="weeks"
@@ -119,23 +119,23 @@ const AddCourseForm = props => {
                                         onChange={handleChange}
                                     />
                                     <small className="form-text text-muted"
-                                    >Enter number of weeks course lasts</small
+                                    >Enter number of weeks lease lasts</small
                                     >
                                 </div>
                                 <div className="form-group">
-                                    <label>Course Tuition</label>
+                                    <label>Monthly Rent</label>
                                     <input
                                         type="number"
                                         name="tuition"
-                                        placeholder="Tuition"
+                                        placeholder="Rent"
                                         className="form-control"
                                         value={tuition}
                                         onChange={handleChange}
                                     />
-                                    <small className="form-text text-muted">USD Currency</small>
+                                    <small className="form-text text-muted">INR Currency</small>
                                 </div>
                                 <div className="form-group">
-                                    <label>Minimum Skill Required</label>
+                                    <label>Minimum Qualifications Required</label>
                                     <Select
                                         name="minimumSkill"
                                         onChange={handleChangeSelect}
@@ -167,7 +167,7 @@ const AddCourseForm = props => {
                                         checked={scholarshipAvailable['scholarshipAvailable']}
                                     />
                                     <label className="form-check-label" htmlFor="scholarshipAvailable">
-                                        Scholarship Available
+                                        Subsidy Available
 									</label>
                                 </div>
                                 <div className="form-group mt-4">

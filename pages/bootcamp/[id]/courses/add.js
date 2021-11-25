@@ -11,7 +11,7 @@ const AddCourse = props => {
         <main>
 
             <Head>
-                <title>DevCamper - Add Course</title>
+                <title>Acres - Add Course</title>
             </Head>
 
             <Navigation />

@@ -7,7 +7,7 @@ function PasswordReset() {
     return (
         <main>
             <Head>
-                <title>DevCamper - Password Reset</title>
+                <title>Acres - Password Reset</title>
             </Head>
 
             <Navigation />

@@ -89,11 +89,11 @@ const AddBootcampForm = () => {
     })
 
     const careerOptions = [
-        { value: 'Web Development', label: 'Web Development' },
-        { value: 'Mobile Development', label: 'Mobile Development' },
-        { value: 'UI/UX', label: 'UI/UX' },
-        { value: 'Data Science', label: 'Data Science' },
-        { value: 'Business', label: 'Business' },
+        { value: 'Web Development', label: 'House' },
+        { value: 'Mobile Development', label: 'Duplex' },
+        { value: 'UI/UX', label: 'Bunglow' },
+        { value: 'Data Science', label: 'Apartment' },
+        { value: 'Business', label: 'Studio Apartment' },
         { value: 'Others', label: 'Others' }
     ]
 
@@ -102,9 +102,9 @@ const AddBootcampForm = () => {
 
             <ToastContainer />
 
-            <h1 className="mb-2">Add Bootcamp</h1>
+            <h1 className="mb-2">Add Property</h1>
             <p>
-                Important: You must be affiliated with a bootcamp to add to DevCamper
+                Important: You must be affiliated with Acres or a real-estate broker to continue.
 			</p>
 
             <form method="POST" onSubmit={handleSubmit}>
@@ -112,17 +112,14 @@ const AddBootcampForm = () => {
                     <div className="col-md-6">
                         <div className="card bg-white py-2 px-4">
                             <div className="card-body">
-                                <h3>Location & Contact</h3>
-                                <p className="text-muted">
-                                    If multiple locations, use the main or largest
-								</p>
+                                <h3>Location & Contact Details</h3>
                                 <div className="form-group">
-                                    <label>Name</label>
+                                    <label>Property Name</label>
                                     <input
                                         type="text"
                                         name="name"
                                         className="form-control"
-                                        placeholder="Bootcamp Name"
+                                        placeholder="Property Name"
                                         onChange={handleChange}
                                         value={name}
                                         required
@@ -166,12 +163,12 @@ const AddBootcampForm = () => {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label>Website</label>
+                                    <label>LinkedIn</label>
                                     <input
                                         type="text"
                                         name="website"
                                         className="form-control"
-                                        placeholder="Website URL"
+                                        placeholder="LinkedIn URL"
                                         onChange={handleChange}
                                         value={website}
                                     />
@@ -189,17 +186,16 @@ const AddBootcampForm = () => {
                                         name="description"
                                         rows="5"
                                         className="form-control"
-                                        placeholder="Description (What you offer, etc)"
+                                        placeholder="Description (basic details of your property)"
                                         maxLength="500"
                                         onChange={handleChange}
                                         value={description}
                                     ></textarea>
                                     <small className="form-text text-muted"
-                                    >No more than 500 characters</small
-                                    >
+                                    >No more than 500 characters</small>
                                 </div>
                                 <div className="form-group">
-                                    <label>Careers</label>
+                                    <label>Type of Property</label>
                                     <Select
                                         name="careers"
                                         onChange={handleChangeSelect}
@@ -218,7 +214,7 @@ const AddBootcampForm = () => {
                                         checked={offers['housing']}
                                     />
                                     <label className="form-check-label" htmlFor="housing">
-                                        Housing
+                                        Furnished
 									</label>
                                 </div>
                                 <div className="form-check">
@@ -231,7 +227,7 @@ const AddBootcampForm = () => {
                                         checked={offers['jobAssistance']}
                                     />
                                     <label className="form-check-label" htmlFor="jobAssistance">
-                                        Job Assistance
+                                        Running Water
 									</label>
                                 </div>
                                 <div className="form-check">
@@ -244,7 +240,7 @@ const AddBootcampForm = () => {
                                         checked={offers['jobGuarantee']}
                                     />
                                     <label className="form-check-label" htmlFor="jobGuarantee">
-                                        Job Guarantee
+                                        Running Electricity
 									</label>
                                 </div>
                                 <div className="form-check">
@@ -257,14 +253,14 @@ const AddBootcampForm = () => {
                                         checked={offers['acceptGi']}
                                     />
                                     <label className="form-check-label" htmlFor="acceptGi">
-                                        Accepts GI Bill
+                                        Accepts Cash
 									</label>
                                 </div>
                                 <p className="text-muted my-4">
-                                    * After you add the bootcamp, you can add the specific courses offered
+                                    * After you add the real estate, you can add the specific listings offered
 								</p>
                                 <p className="text-muted my-4">
-                                    * Publishers can only add one bootcamp
+                                    * Publishers can only add one real estate property
                                 </p>
                             </div>
                         </div>
@@ -273,7 +269,7 @@ const AddBootcampForm = () => {
                 <div className="form-group">
                     <input
                         type="submit"
-                        value="Submit Bootcamp"
+                        value="Submit Property"
                         className="btn btn-primary btn-block my-4"
                     />
                     <Link href={`/user/${userId}/manage/bootcamps`}>

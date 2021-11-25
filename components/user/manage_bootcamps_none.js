@@ -5,12 +5,12 @@ const ManageBootcampsNone = () => {
     return (
         <React.Fragment>
             <p className="lead">
-                You have not yet added a bootcamp
+                You have not yet added any real estate
             </p>
             <Link href={`/bootcamp/add`}>
                 <a
                     className="btn btn-primary btn-block"
-                >Add Bootcamp</a>
+                >Add Real Estate</a>
             </Link>
         </React.Fragment>
     )

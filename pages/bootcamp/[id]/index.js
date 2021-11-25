@@ -10,7 +10,7 @@ const Bootcamp = props => {
         <main>
 
             <Head>
-                <title>DevCamper - {data.name}</title>
+                <title>Acres {data.name}</title>
             </Head>
 
             <Navigation />

@@ -31,7 +31,7 @@ const UserCourses = () => {
         <main>
 
             <Head>
-                <title>DevCamper - Manage Courses</title>
+                <title>Acres - Manage Courses</title>
             </Head>
 
             <Navigation />

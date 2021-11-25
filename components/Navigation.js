@@ -19,8 +19,8 @@ const Navigation = () => {
             <div className="container">
                 <Link href="/">
                     <a className="navbar-brand">
-                        <i className="fas fa-laptop-code"></i>
-                        &nbsp; DevCamper
+                        <i className="fas fa-home"></i>
+                        &nbsp; Acres
                     </a>
                 </Link>
 
@@ -34,7 +34,7 @@ const Navigation = () => {
                             <Link href="/bootcamps">
                                 <a className="nav-link">
                                     <i className="fas fa-search"></i>
-                                    &nbsp; Browse Bootcamps
+                                    &nbsp; Browse Adverts
                                 </a>
                             </Link>
                         </li>
@@ -69,14 +69,14 @@ const Navigation = () => {
 
                                             <Link href={`/user/${user.currentUser._id}/manage/bootcamps`}>
                                                 <a className="dropdown-item">
-                                                    Manage Bootcamp
+                                                    Manage Property
                                                 </a>
                                             </Link>
 
 
                                             <Link href={`/user/${user.currentUser._id}/manage/courses`}>
                                                 <a className="dropdown-item"
-                                                >Manage Courses</a>
+                                                >Manage Listing</a>
                                             </Link>
 
                                             <Link href={`/user/${user.currentUser._id}/manage/reviews`}>

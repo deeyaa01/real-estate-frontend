@@ -10,11 +10,11 @@ import API_URL, { API_OPTIONS_PUT } from '../../api/api';
 const EditBootcampForm = props => {
 
     const careerOptions = [
-        { value: 'Web Development', label: 'Web Development' },
-        { value: 'Mobile Development', label: 'Mobile Development' },
-        { value: 'UI/UX', label: 'UI/UX' },
-        { value: 'Data Science', label: 'Data Science' },
-        { value: 'Business', label: 'Business' },
+        { value: 'Web Development', label: 'House' },
+        { value: 'Mobile Development', label: 'Duplex' },
+        { value: 'UI/UX', label: 'Bunglow' },
+        { value: 'Data Science', label: 'Apartment' },
+        { value: 'Business', label: 'Studio Apartment' },
         { value: 'Others', label: 'Others' }
     ]
 
@@ -94,19 +94,16 @@ const EditBootcampForm = props => {
 
             <ToastContainer />
 
-            <h1 className="mb-2">Edit Bootcamp</h1>
+            <h1 className="mb-2">Edit Property</h1>
 
             <form method="POST" onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-md-6">
                         <div className="card bg-white py-2 px-4">
                             <div className="card-body">
-                                <h3>Location & Contact</h3>
-                                <p className="text-muted">
-                                    If multiple locations, use the main or largest
-								</p>
+                                <h3>Location & Contact Details</h3>
                                 <div className="form-group">
-                                    <label>Name</label>
+                                    <label>Property Name</label>
                                     <input
                                         type="text"
                                         name="name"
@@ -155,7 +152,7 @@ const EditBootcampForm = props => {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label>Website</label>
+                                    <label>LinkedIn</label>
                                     <input
                                         type="text"
                                         name="website"
@@ -178,7 +175,7 @@ const EditBootcampForm = props => {
                                         name="description"
                                         rows="5"
                                         className="form-control"
-                                        placeholder="Description (What you offer, etc)"
+                                        placeholder="Description (basic details of your property)"
                                         maxLength="500"
                                         onChange={handleChange}
                                         value={description}
@@ -188,7 +185,7 @@ const EditBootcampForm = props => {
                                     >
                                 </div>
                                 <div className="form-group">
-                                    <label>Careers</label>
+                                    <label>Type of Property</label>
                                     <Select
                                         name="careers"
                                         onChange={handleChangeSelect}
@@ -207,7 +204,7 @@ const EditBootcampForm = props => {
                                         checked={offers['housing']}
                                     />
                                     <label className="form-check-label" htmlFor="housing">
-                                        Housing
+                                        Furnished
 									</label>
                                 </div>
                                 <div className="form-check">
@@ -220,7 +217,7 @@ const EditBootcampForm = props => {
                                         checked={offers['jobAssistance']}
                                     />
                                     <label className="form-check-label" htmlFor="jobAssistance">
-                                        Job Assistance
+                                        Running Water
 									</label>
                                 </div>
                                 <div className="form-check">
@@ -233,7 +230,7 @@ const EditBootcampForm = props => {
                                         checked={offers['jobGuarantee']}
                                     />
                                     <label className="form-check-label" htmlFor="jobGuarantee">
-                                        Job Guarantee
+                                        Running Electricity
 									</label>
                                 </div>
                                 <div className="form-check">
@@ -246,7 +243,7 @@ const EditBootcampForm = props => {
                                         checked={offers['acceptGi']}
                                     />
                                     <label className="form-check-label" htmlFor="acceptGi">
-                                        Accepts GI Bill
+                                        Accepts Cash
 									</label>
                                 </div>
                             </div>
@@ -256,7 +253,7 @@ const EditBootcampForm = props => {
                 <div className="form-group">
                     <input
                         type="submit"
-                        value="Update Bootcamp"
+                        value="Update Property"
                         className="btn btn-primary btn-block my-4"
                     />
                     <Link href={`/user/${user.currentUser._id}/manage/bootcamps`}>

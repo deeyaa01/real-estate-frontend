@@ -80,7 +80,7 @@ const ManageBootcamps = props => {
                 <div className="col-md-8 m-auto">
                     <div className="card bg-white py-2 px-4">
                         <div className="card-body">
-                            <h1 className="mb-4">Manage Bootcamp/s</h1>
+                            <h1 className="mb-4">Manage Property</h1>
 
                             {
                                 isLoaded
@@ -162,13 +162,13 @@ const ManageBootcamps = props => {
 
                                                 <Link href={`/bootcamp/${bootcamp._id}/edit`}>
                                                     <a className="btn btn-primary btn-block"
-                                                    >Edit Bootcamp Details</a>
+                                                    >Edit Property Details</a>
                                                 </Link>
 
                                                 <a
                                                     onClick={() => { handleDelete(bootcamp._id) }}
                                                     className="btn btn-danger btn-block"
-                                                >Remove Bootcamp</a>
+                                                >Remove Property</a>
 
                                             </div>
                                         ))
@@ -185,12 +185,11 @@ const ManageBootcamps = props => {
                             }
 
                             <small className="form-text text-muted">
-                                * Publishers can only add one bootcamp
+                                * Publishers can only add one real estate property
 							</small>
 
                             <small className="form-text text-muted">
-                                * You must be affiliated with the bootcamp in some way in order
-                                to add it to DevCamper.
+                                * You must be affiliated with Acres or any real estate broker to publish.
 							</small>
 
                         </div>

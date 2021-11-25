@@ -68,11 +68,10 @@ const ManageCourses = props => {
                                 : <div className="card-body">
                                     <Link href={`/user/${userId}/manage/bootcamps`}>
                                         <a className="btn btn-link text-secondary my-3">
-                                            <i className="fas fa-chevron-left"></i>
-                                            &nbsp; Manage Bootcamps
+                                            Manage Property
                                         </a>
                                     </Link>
-                                    <h1 className="mb-4">Manage Courses</h1>
+                                    <h1 className="mb-4">Manage Listing</h1>
 
                                     {
                                         isLoaded
@@ -112,7 +111,7 @@ const ManageCourses = props => {
 
                                                     <Link href={`/bootcamp/${bootcamp.id}/courses/add`}>
                                                         <a className="btn btn-primary btn-block mb-4">
-                                                            Add Bootcamp Course
+                                                            Add Propety Listing
                                                         </a>
                                                     </Link>
 

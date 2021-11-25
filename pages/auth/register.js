@@ -7,7 +7,7 @@ function Register() {
     return (
         <main>
             <Head>
-                <title>DevCamper - Register</title>
+                <title>Acres - Register</title>
             </Head>
 
             <Navigation />

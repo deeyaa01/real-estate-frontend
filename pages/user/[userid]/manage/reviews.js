@@ -11,7 +11,7 @@ const UserReviews = props => {
         <main>
 
             <Head>
-                <title>DevCamper - Manage Reviews</title>
+                <title>Acres - Manage Reviews</title>
             </Head>
 
             <Navigation />

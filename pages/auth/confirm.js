@@ -23,7 +23,7 @@ const Confirm = props => {
     return (
         <main>
             <Head>
-                <title>DevCamper - Confirm</title>
+                <title>Acres - Confirm</title>
             </Head>
 
             <Navigation />
@@ -39,7 +39,7 @@ const Confirm = props => {
 
                                     {
                                         isConfirmed
-                                            ? <h6 className="text-center">Account has been confirmed. Happy Coding! &nbsp; &#127881;</h6>
+                                            ? <h6 className="text-center">Account has been confirmed. Happy Browsing! &nbsp; &#127881;</h6>
                                             : !isError
                                                 ? <h6 className="text-center">Please wait</h6>
                                                 : null

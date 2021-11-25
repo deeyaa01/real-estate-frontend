@@ -9,7 +9,7 @@ const Bootcamps = () => {
         <main>
 
             <Head>
-                <title>DevCamper - Bootcamps</title>
+                <title>Acres - Bootcamps</title>
             </Head>
 
             <Navigation />

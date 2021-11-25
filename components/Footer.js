@@ -11,7 +11,7 @@ const Footer = () => {
                         <h5 className="text-uppercase font-weight-bold">Our Vision</h5>
 
                         <p>
-                            Find, rate and read reviews on coding bootcamps. Learn how to code, how to develop web applications and how to elevate your career with the wide variety of bootcamp across the nation
+                        Our vision is to be the leading real estate service provider in the region and the preferred place of employment for real estate professionals.
                         </p>
 
                     </div>
@@ -23,7 +23,7 @@ const Footer = () => {
                         <h5 className="text-uppercase font-weight-bold">Our Mission</h5>
 
                         <p>
-                            Find, rate and read reviews on coding bootcamps. Learn how to code, how to develop web applications and how to elevate your career with the wide variety of bootcamp across the nation
+                        We’re dedicated to achieving our vision by creating an energetic, positive, results-driven work environment focused on the investment and development of long-term relationships. We measure our success by the results delivered to clients.
                         </p>
 
                     </div>
@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
 
             <div className={`footer-copyright text-center py-3 ${styles.lower_row}`}>
-                © {new Date().getFullYear()} Copyright &nbsp; | &nbsp; <i className="fas fa-laptop-code"></i> &nbsp; DevCamper
+                © {new Date().getFullYear()} Copyright &nbsp; | &nbsp; <i className="fas fa-home"></i> &nbsp; Acres
             </div>
 
         </footer>

@@ -9,7 +9,7 @@ const AddBootcamp = () => {
         <main>
 
             <Head>
-                <title>DevCamper - Add Bootcamp</title>
+                <title>Acres - Add Bootcamp</title>
             </Head>
 
             <Navigation />

@@ -12,16 +12,16 @@ const Home = props => {
     <main>
 
       <Head>
-        <title>DevCamper - Home</title>
+        <title>Acres - Home</title>
       </Head>
 
       <Navigation />
 
       <Showcase />
 
-      <Latest
+      {/*<Latest
         bootcamps={data}
-      />
+      />*/}
 
       <Footer />
 

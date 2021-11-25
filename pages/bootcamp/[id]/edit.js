@@ -11,7 +11,7 @@ const EditBootcamp = props => {
         <main>
 
             <Head>
-                <title>DevCamper - Edit Bootcamp</title>
+                <title>Acres - Edit Bootcamp</title>
             </Head>
 
             <Navigation />

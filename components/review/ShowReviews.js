@@ -22,7 +22,7 @@ const Reviews = props => {
                         <Link href={`/bootcamp/${bootcampData._id}`}>
                             <a className="btn btn-secondary my-3" >
                                 <i className="fas fa-chevron-left"></i>
-                                &nbsp; Bootcamp Info
+                                &nbsp; Property Info
                             </a>
                         </Link>
 
@@ -54,7 +54,7 @@ const Reviews = props => {
                                     </div>
                                 ))
                                 : <div>
-                                    <h6>No Reviews for this bootcamp yet</h6>
+                                    <h6>No Reviews for this real estate property yet</h6>
                                 </div>
                         }
 
@@ -80,7 +80,7 @@ const Reviews = props => {
                         <Link href={`/bootcamp/${bootcampData._id}/reviews/add`}>
                             <a className="btn btn-primary btn-block my-3">
                                 <i className="fas fa-pencil-alt"></i>
-                            &nbsp; Review This Bootcamp
+                            &nbsp; Review This Real Estate Property
                             </a>
                         </Link>
                     </div>

@@ -11,7 +11,7 @@ const BootcampReviews = props => {
         <main>
 
             <Head>
-                <title>DevCamper - Reviews</title>
+                <title>Acres - Reviews</title>
             </Head>
 
             <Navigation />

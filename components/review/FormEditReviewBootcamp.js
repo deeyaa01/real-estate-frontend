@@ -66,7 +66,7 @@ const EditReviewBootcampForm = props => {
                             <Link href={`/bootcamp/${bootcamp._id}`}>
                                 <a className="btn btn-link text-secondary my-3">
                                     <i className="fas fa-chevron-left"></i>
-                                    &nbsp; Bootcamp Info
+                                    &nbsp; Property Info
                                 </a>
                             </Link>
 
@@ -75,7 +75,7 @@ const EditReviewBootcampForm = props => {
                             <h3 className="text-primary mb-4">Write a Review</h3>
 
                             <p>
-                                You must have attended and graduated this bootcamp to review
+                                You must have rented or visited the property to release a reveiw.
 							</p>
 
                             <form onSubmit={handleSubmit} method="POST">
@@ -141,7 +141,7 @@ const EditReviewBootcampForm = props => {
                                 </div>
 
                                 <p className="text-muted my-4">
-                                    * Only users can leave a review for a bootcamp
+                                    * Only users can leave a review for a real estate property
                                 </p>
 
                             </form>

@@ -52,15 +52,13 @@ const BootcampCard = props => {
                                     className="float-right"
                                     style={{ position: 'relative', bottom: '15px' }}
                                 >
-                                    No recorded course yet
+                                    No recorded listings yet
                                 </small>
 
                                 : <small
                                     className="float-right"
                                     style={{ position: 'relative', bottom: '15px' }}
                                 >
-                                    <i className="fas fa-money-bill-wave-alt text-success"></i>
-                                    &nbsp;
                                     ${formatPrice(bootcamp.averageCost)} (Average)
                                 </small>
                         }

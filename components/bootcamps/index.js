@@ -23,7 +23,7 @@ const BootcampList = () => {
 
     useEffect(() => {
         (async function () {
-            const raw = await fetch(`${API_URL}/api/v1/bootcamps?limit=10`)
+            const raw = await fetch(`http:localhost:5000/api/properties`)
             const parsed = await raw.json();
             setBootcamps(parsed.data);
             setPagination(parsed.pagination);
@@ -176,7 +176,7 @@ const BootcampList = () => {
                                             name="miles"
                                             value={filterMiles}
                                             onChange={handleChange}
-                                            placeholder="Miles From"
+                                            placeholder="Kilometers"
                                         />
                                     </div>
                                 </div>
@@ -203,7 +203,7 @@ const BootcampList = () => {
                         <h4>Filter</h4>
                         <form onSubmit={handleSubmit} method="POST">
                             <div className="form-group">
-                                <label> Career</label>
+                                <label> Type of Property</label>
                                 <select
                                     value={filterCareer}
                                     onChange={handleChange}
@@ -211,11 +211,11 @@ const BootcampList = () => {
                                     className="custom-select mb-2"
                                 >
                                     <option value="">Any</option>
-                                    <option value="Web Development">Web Development</option>
-                                    <option value="Mobile Development">Mobile Development</option>
-                                    <option value="UI/UX">UI/UX</option>
-                                    <option value="Data Science">Data Science</option>
-                                    <option value="Business">Business</option>
+                                    <option value="Web Development">House</option>
+                                    <option value="Mobile Development">Duplex</option>
+                                    <option value="UI/UX">Bunglow</option>
+                                    <option value="Data Science">Apartment</option>
+                                    <option value="Business">Studio Apartment</option>
                                     <option value="Other">Other</option>
                                 </select>
                             </div>
@@ -249,13 +249,13 @@ const BootcampList = () => {
                                     className="custom-select mb-2"
                                 >
                                     <option value="">Any</option>
-                                    <option value="20000">$20,000</option>
-                                    <option value="15000">$15,000</option>
-                                    <option value="10000">$10,000</option>
-                                    <option value="8000">$8,000</option>
-                                    <option value="6000">$6,000</option>
-                                    <option value="4000">$4,000</option>
-                                    <option value="2000">$2,000</option>
+                                    <option value="20000">Rs 20,000</option>
+                                    <option value="15000">Rs 15,000</option>
+                                    <option value="10000">Rs 10,000</option>
+                                    <option value="8000">Rs 8,000</option>
+                                    <option value="6000">Rs 6,000</option>
+                                    <option value="4000">Rs 4,000</option>
+                                    <option value="2000">Rs 2,000</option>
                                 </select>
                             </div>
                             <input

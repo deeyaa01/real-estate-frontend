@@ -66,9 +66,9 @@ const RegisterForm = () => {
 
                                 <ToastContainer />
 
-                                <h1><i className="fas fa-user-plus"></i> Register</h1>
+                                <h1>Register</h1>
                                 <p>
-                                    Register to list your bootcamp, rate, review and give a like on your favorite bootcamps
+                                    Register to buy, sell and rent your homes in the #1 Real Estate Platform in India
 								</p>
                                 <form onSubmit={handleSubmit} method="POST">
                                     <div className="form-group">
@@ -129,7 +129,7 @@ const RegisterForm = () => {
                                                 checked={role === 'user'}
                                             />
                                             <label className="form-check-label">
-                                                Regular User (Browse, Write reviews, etc)
+                                                To Buy/Rent
 											</label>
                                         </div>
                                         <div className="form-check">
@@ -142,12 +142,12 @@ const RegisterForm = () => {
                                                 checked={role === 'publisher'}
                                             />
                                             <label className="form-check-label">
-                                                Bootcamp Publisher
+                                                To Sell
 											</label>
                                         </div>
                                     </div>
                                     <small className="text-form text-danger">
-                                        * You must be affiliated with the bootcamp in some way in order to add it to DevCamper.
+                                        *By clicking you will be agreeing to the Terms and Conditions
 									</small> <br />  <br />
                                     <div className="form-group">
                                         <input

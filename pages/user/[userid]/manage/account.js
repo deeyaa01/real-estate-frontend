@@ -9,7 +9,7 @@ const UserAccount = () => {
         <main>
 
             <Head>
-                <title>DevCamper - Manage Account</title>
+                <title>Acres - Manage Account</title>
             </Head>
 
             <Navigation />

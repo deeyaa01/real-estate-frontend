@@ -63,18 +63,16 @@ const LoginForm = () => {
 
                                 <ToastContainer />
 
-                                <span className="float-right">
+                                {/*<span className="float-right">
                                     Login <Link href="/auth/login_otp"><a>via OTP</a></Link>
-                                </span>
+                                </span>*/}
 
                                 <h1>
-                                    <i className="fas fa-sign-in-alt"></i>
-                                    &nbsp; Login
+                                    Login
                                 </h1>
 
                                 <p>
-                                    Log in to list your bootcamp or rate, review and favorite
-                                    bootcamps
+                                    Log in to find the best homes for your family.
 								</p>
 
                                 <form method="POST" onSubmit={handleSubmit}>
@@ -107,7 +105,7 @@ const LoginForm = () => {
                                     <div className="form-group">
                                         <input
                                             type="submit"
-                                            value="Login"
+                                            value="Continue"
                                             className="btn btn-primary btn-block"
                                             disabled={disabled}
                                         />

@@ -98,14 +98,14 @@ const EditCourseForm = props => {
                             <Link href={`/user/${user.currentUser._id}/manage/courses`}>
                                 <a className="btn btn-link text-secondary my-3">
                                     <i className="fas fa-chevron-left"></i>
-                                    &nbsp; Manage Courses
+                                    &nbsp; Manage Listing
                                 </a>
                             </Link>
                             <h1 className="mb-2">{title}</h1>
-                            <h3 className="text-primary mb-4">Edit Course</h3>
+                            <h3 className="text-primary mb-4">Edit Listing</h3>
                             <form onSubmit={handleSubmit} method="POST">
                                 <div className="form-group">
-                                    <label>Course Title</label>
+                                    <label>Listing Title</label>
                                     <input
                                         type="text"
                                         name="title"
@@ -116,7 +116,7 @@ const EditCourseForm = props => {
                                     />
                                 </div>
                                 <div className="form-group">
-                                    <label>Duration</label>
+                                    <label>Lease Duration</label>
                                     <input
                                         type="number"
                                         name="weeks"
@@ -127,22 +127,22 @@ const EditCourseForm = props => {
                                     />
                                     <small
                                         className="form-text text-muted"
-                                    >Enter number of weeks course lasts</small>
+                                    >Enter number of weeks lease lasts</small>
                                 </div>
                                 <div className="form-group">
-                                    <label>Course Tuition</label>
+                                    <label>Monthly Rent</label>
                                     <input
                                         type="number"
                                         name="tuition"
-                                        placeholder="Tuition"
+                                        placeholder="Rent"
                                         className="form-control"
                                         value={tuition}
                                         onChange={handleChange}
                                     />
-                                    <small className="form-text text-muted">USD Currency</small>
+                                    <small className="form-text text-muted">INR Currency</small>
                                 </div>
                                 <div className="form-group">
-                                    <label>Minimum Skill Required</label>
+                                    <label>Minimum Qualifications Required</label>
                                     <Select
                                         name="minimumSkill"
                                         onChange={handleChangeSelect}
@@ -174,7 +174,7 @@ const EditCourseForm = props => {
                                         checked={scholarshipAvailable['scholarshipAvailable']}
                                     />
                                     <label className="form-check-label" htmlFor="scholarshipAvailable">
-                                        Scholarship Available
+                                        Subsidy Available
 									</label>
                                 </div>
                                 <div className="form-group mt-4">

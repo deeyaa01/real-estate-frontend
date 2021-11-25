@@ -7,7 +7,7 @@ function Login() {
     return (
         <main>
             <Head>
-                <title>DevCamper - Login</title>
+                <title>Acres - Login</title>
             </Head>
 
             <Navigation />

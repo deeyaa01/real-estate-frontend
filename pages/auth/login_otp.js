@@ -7,7 +7,7 @@ function LoginOTP() {
     return (
         <main>
             <Head>
-                <title>DevCamper - Login OTP</title>
+                <title>Acres - Login OTP</title>
             </Head>
 
             <Navigation />

@@ -24,7 +24,7 @@ const UserBootcamps = () => {
         <main>
 
             <Head>
-                <title>DevCamper - Manage Bootcamps</title>
+                <title>Acres - Manage Bootcamps</title>
             </Head>
 
             <Navigation />

@@ -11,7 +11,7 @@ const EditCourse = props => {
         <main>
 
             <Head>
-                <title>DevCamper - Edit Course</title>
+                <title>Acres - Edit Course</title>
             </Head>
 
             <Navigation />
